@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glassplayer</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
 </head>
 
 <body>
@@ -17,12 +21,19 @@
             <h2 class="song-title">Radioactive</h2>
         </div>
         <div class="player-controls">
-            <div class="song-progress"></div>
-            <button class="player-controls--buttons">prev</button>
-            <button class="player-controls--buttons">play</button>
-            <button class="player-controls--buttons">next</button>
+            <progress class="song-progress" value="32" max="100"> 32% </progress>
+            <button class="player-controls--buttons">
+                <i class="fa fa-step-backward"></i>
+            </button>
+            <button class="player-controls--buttons btn-play">
+                <i class="fa fa-play"></i>
+            </button>
+            <button class="player-controls--buttons">
+                <i class="fa fa-step-forward"></i>
+            </button>
         </div>
     </main>
+    <div class="player-bg"></div>
 </body>
 
 </html>
