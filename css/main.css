@@ -128,13 +128,12 @@ body {
   max-width: 500px;
   height: inherit;
   max-height: 800px;
-  border: 2px solid black;
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.18);
   backdrop-filter: blur(4.5px);
   -webkit-backdrop-filter: blur(4.5px);
-  border-radius: 21px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.42);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 21px;
 }
 .player-controls {
   width: 100%;
@@ -146,7 +145,7 @@ body {
 .player-controls--buttons {
   height: 84px;
   font-size: 22px;
-  color: #fff;
+  color: #ffffff;
   background: transparent;
   border-radius: 100%;
   aspect-ratio: 1/1;
@@ -158,9 +157,10 @@ body {
   transform: scale(1.12);
 }
 .player-controls .btn-play {
-  background: rgba(255, 255, 255, 0.0042);
+  background: rgba(255, 255, 255, 0.042);
+  backdrop-filter: blur(4.5px);
   -webkit-backdrop-filter: blur(4.5px);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.21);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.18);
   position: relative;
   font-size: 42px;
 }
@@ -176,7 +176,7 @@ body {
   background-position: center;
   position: absolute;
   z-index: -1;
-  filter: blur(8px);
+  filter: blur(4.5px);
   width: 100vw;
   height: 100vh;
 }
@@ -189,11 +189,14 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.42);
 }
-.song-title {
+.song-title, .song-author {
   margin: 21px auto;
   font-size: 42px;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
+}
+.song-author {
+  font-size: 21px;
 }
 .song-progress {
   width: calc(100% - 42px);
@@ -204,11 +207,11 @@ body {
   border-radius: 21px;
 }
 .song-progress::-webkit-progress-bar {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .song-progress::-webkit-progress-value {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .song-progress::-moz-progress-bar {
-  background-color: #fff;
+  background-color: #ffffff;
 }/*# sourceMappingURL=main.css.map */
